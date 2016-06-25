@@ -1,0 +1,20 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Umang Varma
+email: umang.me@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Infrequently updated ideas, updates, and discoveries will go here.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://umangv.github.io" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  umangv
+
+# Build settings
+markdown: kramdown
+permalink: ":year/:month/:day/:title/"
