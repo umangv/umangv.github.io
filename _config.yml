@@ -9,7 +9,7 @@
 title: Umang Varma
 email: umang.me@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Infrequently updated ideas, updates, and discoveries will go here.
+  I'm a mathematician interested in Sparse Analysis and Machine Learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://umangv.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
