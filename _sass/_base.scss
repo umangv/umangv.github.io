@@ -81,7 +81,7 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6, .site-title {
+h1, h2, h3, h4, h5, h6, .site-title, .site-nav {
     font-family: $title-font-family;
     font-weight: $title-font-weight;
 }
@@ -92,17 +92,13 @@ h1, h2, h3, h4, h5, h6, .site-title {
  * Links
  */
 a {
+  &, &:active {
     color: $brand-color;
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+  }
+  &:hover {
+    color: darken($brand-color,30%);
+  }
 }
 
 
@@ -151,41 +147,6 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 
 
 

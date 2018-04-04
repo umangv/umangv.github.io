@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
   <p>I am a mathematician and programmer. I am interested in Sparse Analysis and Machine Learning and have been working on Single-Cell RNA Sequencing Analysis as part of my dissertation work. Some of this work has involved developing <a href="https://picturedrocks.github.io/">PicturedRocks</a>, an open-source tool with feature selection algorithms for this context. In the past, I have also developed various open-source projects, some of which include:<p>
@@ -12,20 +11,20 @@ layout: default
   </ul>
 
 
-  <h1 class="page-heading">Posts</h1>
+  {% for post in site.posts %}
+    <article class="post">
+      <h2 class="post-link" >
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      {% if post.excerpt %}
+        {{ post.excerpt }}
+      {% endif %}
+      {% if post.excerpt != post.content %}
+        <a href="{{post.url | prepend: site.baseurl }}" class="readmore">Read more...</a>
+      {% endif %}
+    </article>
+  {% endfor %}
 
 </div>

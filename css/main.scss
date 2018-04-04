@@ -3,23 +3,23 @@
 ---
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=PT+Serif|Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
 
 // Our variables
-$base-font-family: "PT Serif", serif;
+$base-font-family: "Noto Sans", sans;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$title-font-family: "Raleway", serif;
+$title-font-family: "Noto Serif", serif;
 $title-font-weight: 300;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #aa4400;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
